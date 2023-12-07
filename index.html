@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiT FreaK.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+   
+    <header class="header">
+        <!-- Left Box For log  -->
+        <div class="left">
+            <img src="dumbbell-35686.png" alt="FiTFreaK">
+            <div>FiT FreaK</div>
+        </div>
+        <!-- Mid Box For Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"  onclick="prompt('Enter your Age') ,prompt('Enter your Gender') ,prompt('Enter your Height') 
+                ,prompt('Enter you weight'),prompt('Enter your Gender') , 
+                prompt('Enter Your Activity Level'), alert('calculating your BMI')">BMI Calculator</a></li>
+               
+                
+                <li><a href="#" onclick="prompt('Enter your Gender') ,prompt('Enter your Age') ,
+                prompt('Enter your Height') ,prompt('Enter you weight'), alert('calculating your BMR')">BMR Calculator</a></li>
+                <li><a href="#"  onclick="prompt('Enter your Age') ,prompt('Enter your Height') ,
+                prompt('Enter you weight') , alert('calculating your Calories')">Calorie Calculator</a></li>
+                
+               
+            </ul>
+        </div>
+        <div class="string2">
+            <h1><p>Fitness Calculator</p></h1></div>
+        
+        <div class="right">
+
+            <button class="btn" onclick="prompt('Enter Your Registered Email ID')">Sign In</button>
+            <button class="btn" onclick="prompt('Enter Your Name')">Register</button>
+        
+
+        </div>
+       
+        <div class="bottle">
+            <h4><p>
+                To create a new workout plan select the workout programs you would like to include on the calendar. Then pick your workout days and choose the relevant calendar. Once you’ve selected the required options simply click build calendar to create your new workout calendar.
+               
+                If you want to edit a calendar you’ve created then you can use the workout editor. You may also use the editor to create a new workout calendar manually.
+                
+       
+                Make sure you register a new account or login before you start. Otherwise you will be unable to edit, save or favourite any of the workout plans on this site
+                
+            </p></h4></div>
+            
+        </header>
+        <div class="container">
+            <h2>Are You Ready!</h2>
+            <form action="Noaction.php">
+                <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Contact Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email Id">
+            </div>
+            
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+        
+  
+    <div class="string">
+        <h1><p>WORKOUT PLANNER</p></h1></div>
+        <div class="string3">
+            <h3><p>Select Your Workout Plan :</p></h3>
+        </div>
+    <div class="scheduler-row1">
+        <h3>Workout Days</h3>
+        <div class="options">
+            <div class="unit unit-select">
+                <label for="day0">Day 1</label>
+                <select id="day0" name="days[]" required class="day"
+               >
+                <option value>-Select-</option>
+                <option value="sgl">single</option>
+                <option value="sglAbs">single + Abs</option>
+                <option value="dbl">Double day</option>
+            </select>
+        </div>
+        <div class="unit unit-select">
+            <label for="day1">Day 2</label>
+            <select id="day1" name="days[]" required class="day"
+            >
+            <option value>-Select-</option>
+            <option value="sgl">single</option>
+            <option value="sglAbs">single + Abs</option>
+            <option value="dbl">Double day</option>
+        </select></div>
+        
+                <div class="unit unit-select">
+                    <label for="day2">Day 3</label>
+                    <select id="day2" name="days[]" required class="day"
+                    >
+                    <option value>-Select-</option>
+                    <option value="sgl">single</option>
+                    <option value="sglAbs">single + Abs</option>
+                    <option value="dbl">Double day</option>
+                </select>
+            </div>
+            <div class="unit unit-select">
+                <label for="day3">Day 4</label>
+                <select id="day3" name="days[]" required class="day"
+                >
+            <option value>-Select-</option>
+            <option value="sgl">single</option>
+            <option value="sglAbs">single + Abs</option>
+            <option value="dbl">Double day</option>
+        </select>
+    </div>
+    <div class="unit unit-select">
+        <label for="day4">Day 5</label>
+        <select id="day4" name="days[]" required class="day"
+        >
+        <option value>-Select-</option>
+        <option value="sgl">single</option>
+        <option value="sglAbs">single + Abs</option>
+        <option value="dbl">Double day</option>
+    </select>
+</div>
+<div class="unit unit-select">
+    <label for="day5">Day 6</label>
+    <select id="day5" name="days[]" required class="day"
+    >
+    <option value>-Select-</option>
+    <option value="sgl">single</option>
+    <option value="sglAbs">single + Abs</option>
+    <option value="dbl">Double day</option>
+</select>
+</div>
+<div class="unit unit-select">
+    <label for="day6">Day 7</label>
+    <select id="day6" name="days[]" required class="day">
+<option value>-Select-</option>
+<option value="sgl">single</option>
+<option value="sglAbs">single + Abs</option>
+<option value="dbl">Double day</option>
+    </select>
+</div>
+<div class="scheduler-row2">
+<h3>Calander Options</h3><div class="options">
+    <div class="unit unit-select">
+        <label for="time">Workouts</label>
+        <select name="time" >
+            <option value>-Select-</option>
+             <option value="15">up to 15 mins</option>
+             <option value="30">up to 30 mins</option>
+             <option value="45">up to 45 mins</option>
+             <option value="60">up to 60 mins</option>
+             <option value="75">up to 75 mins</option>
+             <option value="90">up to 90 mins</option>
+        </select>
+    </div>
+    <div class="unit unit-select">
+        <label for="weeks">Duration</label>
+        <select name="weeks" >
+            <option value>-Select-</option>
+             <option value="4">4 Weeks</option>
+             <option value="6">6 Weeks</option>
+             <option value="8">8 Weeks</option>
+             <option value="10">10 Weeks</option>
+             <option value="12">12 Weeks</option>
+             <option value="14">14 Weeks</option>
+             <option value="16">16 Weeks</option>
+        </select>
+    </div>
+    <div class="unit unit-select">
+        <label for="level">Level</label>
+        <select name="level" >
+            <option value>-Select-</option>
+             <option value="befinner">Beginner</option>
+             <option value="intermediate">Intermediate</option>
+             <option value="advanced">Advanced</option>
+        </select>
+    </div>
+    <div class="unit unit-select">
+        <label for="goal">Goal</label>
+        <select name="goal">
+            <option value>-Select-</option>
+             <option value="body">sculpt/Tone</option>
+             <option value="lean">Cardio/Lean</option>
+             <option value="mass">Muscle/Mass</option>
+        </select>
+    </div>
+</div>
+</div>
+<div id="scheduler-build" class="pagination scheduler-row">
+    <button type="submit" data-action="build" id="ajax-button" class="btn-big-orange" onclick="alert('It May Take Some Time')">build schedule
+    </button>
+</div>
+</form>
+        </div>
+      </div>
+      </div></div>
+        <footer class="footer">
+        <div class="last-container">
+            <div class="last-row">
+                <div class="footer-col">
+                    <h4>about FiT FreaK</h4>
+                    <ul>
+                        <li><a href="#" onclick="alert('The FiT FreaK fitness calculators help make your life easy! Whether you want to calculate BMI ')">About Us</a></li>
+                        <li><a href="#" >Gyms Near me</a></li>
+                        <li><a href="#" >join Now</a></li>
+                        <li><a href="#" >Refer A Friend</a></li>
+                        <li><a href="#" >Memders Review</a></li>
+                        <li><a href="#" >our services</a></li>
+                        <li><a href="#" >privacy policy</a></li>
+                        <li><a href="#" >affiliate program</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+            
+                
+              
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+       
+</body>
+
+</html>
